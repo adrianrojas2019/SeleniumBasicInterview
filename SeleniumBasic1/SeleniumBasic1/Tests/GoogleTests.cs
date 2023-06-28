@@ -30,31 +30,5 @@ namespace SeleniumBasic1
             //assert
             Assert.IsTrue(googlePage.IsOnResultsPage());
         }
-
-        [Test]
-        public void LaunchChrome()
-        {
-            IWebDriver driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("https://www.google.com");
-
-            //Capture the Title
-            var title = driver.Title;
-            Console.WriteLine("Page Title: ");
-            Console.WriteLine(title);
-
-            var url = driver.Url;
-            Console.WriteLine("Page URL: ");
-            Console.WriteLine(url);
-
-
-            var pageSource = driver.PageSource;
-            Console.WriteLine("Page Source: ");
-            Console.WriteLine(pageSource);
-            Thread.Sleep(3000);
-
-            driver.Close();
-
-        }
-
     }
 }

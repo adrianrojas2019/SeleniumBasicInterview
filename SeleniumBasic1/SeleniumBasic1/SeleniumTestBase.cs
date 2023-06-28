@@ -1,6 +1,9 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using NUnit.Framework;
+using OpenQA.Selenium.Remote;
+using OpenQA.Selenium.Support.UI;
+using System;
 
 namespace SeleniumBasic1
 {
