@@ -26,6 +26,7 @@ namespace SeleniumBasic1
             iISFactorPage.GoToPage();
             iISFactorPage.GoToMenuPage(labels.IIS_Factors);
             Assert.That(iISFactorPage.IsTitleDisplayedOnPage(), Is.True);
+            //Wait until parametric-modal has been closed or click on Agree button
         }
     }
 }

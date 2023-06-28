@@ -1,8 +1,10 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Xml.Linq;
 
 namespace SeleniumBasic1
 {
@@ -44,27 +46,21 @@ namespace SeleniumBasic1
             //Create menuBar class with all menu item-subitems
             //Click on Investor Solutions
 
-            Thread.Sleep(5000);
-            InvestorSolutionsMenu.Click();
-            Thread.Sleep(5000);
-            Console.WriteLine("Value is: " + pageName);
-            //Then Click on Sub item {pageName} => 'Factors' notice [1] and [2] there are 2 sub menu
-            var subItem  = InvestorSolutionsFactorMenuItem(pageName);
 
-            Thread.Sleep(5000);
-            Console.WriteLine("Clicked??");
-            Console.WriteLine(subItem);
-            subItem.Click();
+            //InvestorSolutionsMenu.Click();
+            //Workaround mouse over Investor Solutions Menu
+            // Create an instance of the Actions class
+            Actions actions = new(driver);
+
+            // Move the mouse cursor to the element
+            actions.MoveToElement(InvestorSolutionsMenu).Perform();
+            Thread.Sleep(1000);
+            //Then Click on Sub item {pageName} => 'Factors' notice [1] and [2] there are 2 sub menu
+            InvestorSolutionsFactorMenuItem(pageName).Click();
         }
         public bool IsTitleDisplayedOnPage()
         {
-            Console.WriteLine("Factor Title: " + FactorTitle.Text);
-            string factorTitle = FactorTitle.Text;
-            Thread.Sleep(5000);
-            //return Assert.That(ISS_Factors_Title, Is.EqualTo(FactorTitle.Text));
-            //Assert.That(FactorTitle.Text, Is.EqualTo(ISS_Factors_Title));
-
-            return factorTitle.Contains(ISS_Factors_Title);
+            return FactorTitle.Text.Contains(ISS_Factors_Title);
         }
     }
 }
