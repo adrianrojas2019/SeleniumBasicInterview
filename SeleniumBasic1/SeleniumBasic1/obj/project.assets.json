@@ -1093,11 +1093,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Adrian Rojas\\Desktop\\Adrian\\Projects\\C#\\Encora Parametrics\\SeleniumBasic1\\SeleniumBasic1\\SeleniumBasic1\\SeleniumBasic1.csproj",
+      "projectUniqueName": "C:\\Users\\Adrian Rojas\\Desktop\\Adrian\\Projects\\C#\\OLD\\SeleniumBasic1\\SeleniumBasic1\\SeleniumBasic1\\SeleniumBasic1.csproj",
       "projectName": "SeleniumBasic1",
-      "projectPath": "C:\\Users\\Adrian Rojas\\Desktop\\Adrian\\Projects\\C#\\Encora Parametrics\\SeleniumBasic1\\SeleniumBasic1\\SeleniumBasic1\\SeleniumBasic1.csproj",
+      "projectPath": "C:\\Users\\Adrian Rojas\\Desktop\\Adrian\\Projects\\C#\\OLD\\SeleniumBasic1\\SeleniumBasic1\\SeleniumBasic1\\SeleniumBasic1.csproj",
       "packagesPath": "C:\\Users\\Adrian Rojas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Adrian Rojas\\Desktop\\Adrian\\Projects\\C#\\Encora Parametrics\\SeleniumBasic1\\SeleniumBasic1\\SeleniumBasic1\\obj\\",
+      "outputPath": "C:\\Users\\Adrian Rojas\\Desktop\\Adrian\\Projects\\C#\\OLD\\SeleniumBasic1\\SeleniumBasic1\\SeleniumBasic1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
